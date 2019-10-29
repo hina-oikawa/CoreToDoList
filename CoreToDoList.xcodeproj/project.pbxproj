@@ -13,6 +13,7 @@
 		CAB969AD236811CE00BC9082 /* CoreToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAB969AB236811CE00BC9082 /* CoreToDoList.xcdatamodeld */; };
 		CAB969AF236811D000BC9082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB969AE236811D000BC9082 /* Assets.xcassets */; };
 		CAB969B2236811D000BC9082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB969B0236811D000BC9082 /* LaunchScreen.storyboard */; };
+		CAB969BA23681B2900BC9082 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB969B923681B2900BC9082 /* AddTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CAB969AE236811D000BC9082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAB969B1236811D000BC9082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAB969B3236811D000BC9082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB969B923681B2900BC9082 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				CAB969B0236811D000BC9082 /* LaunchScreen.storyboard */,
 				CAB969B3236811D000BC9082 /* Info.plist */,
 				CAB969AB236811CE00BC9082 /* CoreToDoList.xcdatamodeld */,
+				CAB969B923681B2900BC9082 /* AddTaskViewController.swift */,
 			);
 			path = CoreToDoList;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAB969AD236811CE00BC9082 /* CoreToDoList.xcdatamodeld in Sources */,
+				CAB969BA23681B2900BC9082 /* AddTaskViewController.swift in Sources */,
 				CAB969A7236811CE00BC9082 /* ViewController.swift in Sources */,
 				CAB969A5236811CE00BC9082 /* AppDelegate.swift in Sources */,
 			);
