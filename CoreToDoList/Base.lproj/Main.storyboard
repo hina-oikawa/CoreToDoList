@@ -21,6 +21,34 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Ar-Iz-re8">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" id="6xN-uC-Hos" customClass="TaskTableViewCell" customModule="CoreToDoList" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6xN-uC-Hos" id="Nqv-3h-DHH">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brf-AZ-pbb">
+                                                    <rect key="frame" x="20" y="11" width="374" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Brf-AZ-pbb" firstAttribute="top" secondItem="Nqv-3h-DHH" secondAttribute="topMargin" id="80d-9t-YKu"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Brf-AZ-pbb" secondAttribute="trailing" id="CnK-mu-UsV"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Brf-AZ-pbb" secondAttribute="bottom" id="QnO-sn-Nyh"/>
+                                                <constraint firstItem="Brf-AZ-pbb" firstAttribute="leading" secondItem="Nqv-3h-DHH" secondAttribute="leadingMargin" id="YCT-Jt-G0f"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="taskLabel" destination="Brf-AZ-pbb" id="cMR-8Z-WsH"/>
+                                            <segue destination="arG-Wr-dEE" kind="show" identifier="SegueEditTaskViewController" id="QhV-CL-FeI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPb-Bh-aJF">
                                 <rect key="frame" x="340" y="785" width="58" height="77"/>
@@ -135,4 +163,7 @@
             <point key="canvasLocation" x="995.65217391304361" y="131.91964285714286"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="QhV-CL-FeI"/>
+    </inferredMetricsTieBreakers>
 </document>
