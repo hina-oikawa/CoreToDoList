@@ -22,6 +22,8 @@ class AddTaskViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.view.backgroundColor = UIColor(hex: "17202A")
+
         // taskに値が代入されていたら、textFieldとsegmentedControlにそれを表示
         if let task = task {
             taskTextField.text = task.name
