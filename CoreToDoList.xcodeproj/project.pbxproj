@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA3941FB236C23C90031C16C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3941FA236C23C90031C16C /* UIColorExtension.swift */; };
 		CAB969A5236811CE00BC9082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB969A4236811CE00BC9082 /* AppDelegate.swift */; };
 		CAB969A7236811CE00BC9082 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB969A6236811CE00BC9082 /* ViewController.swift */; };
 		CAB969AA236811CE00BC9082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB969A8236811CE00BC9082 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA3941FA236C23C90031C16C /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		CAB969A1236811CE00BC9082 /* CoreToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB969A4236811CE00BC9082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB969A6236811CE00BC9082 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				CAB969AB236811CE00BC9082 /* CoreToDoList.xcdatamodeld */,
 				CAB969B923681B2900BC9082 /* AddTaskViewController.swift */,
 				CAB969BB236AC3C100BC9082 /* TaskTableViewCell.swift */,
+				CA3941FA236C23C90031C16C /* UIColorExtension.swift */,
 			);
 			path = CoreToDoList;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				CAB969BC236AC3C100BC9082 /* TaskTableViewCell.swift in Sources */,
 				CAB969A7236811CE00BC9082 /* ViewController.swift in Sources */,
 				CAB969A5236811CE00BC9082 /* AppDelegate.swift in Sources */,
+				CA3941FB236C23C90031C16C /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

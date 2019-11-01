@@ -25,6 +25,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor(hex: "17202A")
 
         taskTableView.dataSource = self
         taskTableView.delegate = self
@@ -99,6 +100,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // tasksToShowにカテゴリー（tasksToShowのキーとなっている）ごとのnameが格納されている
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasksToShow[taskCategories[section]]!.count
+    }
+
+    // セクションの背景とテキストの色を変更する
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
+        view.tintColor = UIColor(hex: "17202A")
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = .lightGray
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
